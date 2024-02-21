@@ -37,12 +37,9 @@ export default function Form() {
 
   return (
     <div className="flex justify-center items-center h-screen w-full bg-gradient-to-br from-gray-500 to-slate-800">
-      <div className="container w-1/2 bg-slate-400 p-6 shadow-xl rounded-lg">
+      <div className="container transition-all duration-500 md:w-1/2 w-[95%]  bg-slate-400 p-6 shadow-xl rounded-lg">
         <div className="progbar">
-          <ProgBar
-            step={step}
-            AllSteps={AllSteps}
-          ></ProgBar>
+          <ProgBar step={step} AllSteps={AllSteps}></ProgBar>
         </div>
         <div>
           <div className="Header text-4xl pb-4 font-semibold">
